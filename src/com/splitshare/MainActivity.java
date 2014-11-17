@@ -3,16 +3,17 @@ package com.splitshare;
 import java.text.DecimalFormat;
 import java.util.List;
 
-import com.splitshare.db.DatabaseHelper;
-import com.splitshare.db.model.FinanceModel;
-import com.splitshare.db.model.PeopleModel;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.TextView;
+
+import com.splitshare.db.DatabaseHelper;
+import com.splitshare.db.model.FinanceModel;
+import com.splitshare.db.model.PeopleModel;
+import com.splitshare.fragment.TransactionFragment;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -39,6 +40,7 @@ public class MainActivity extends ActionBarActivity {
 		
 		// Display results
 		userInfoText.setText(userInfo);
+		createTransactionContainer();
 	}
 	
 	private String createUserProfile(DatabaseHelper dbHelper) {
@@ -58,6 +60,18 @@ public class MainActivity extends ActionBarActivity {
 		}
 		
 		return user.getFirstName() + " " + user.getLastName() + ": $" + df.format(totalBalance);
+	}
+	
+	private void createTransactionContainer() {
+		TransactionFragment owedFragment = TransactionFragment
+                .newInstance(StaticValues.TRANSACTION_OWED);
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.fragment_owed, owedFragment).commit();
+        
+        TransactionFragment owingFragment = TransactionFragment
+        		.newInstance(StaticValues.TRANSACTION_OWING);
+        getSupportFragmentManager().beginTransaction()
+        		.add(R.id.fragment_owing, owingFragment).commit();
 	}
 
 	@Override

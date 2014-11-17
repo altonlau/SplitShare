@@ -1126,6 +1126,8 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
+        public static final int fragment_owed=0x7f050041;
+        public static final int fragment_owing=0x7f050042;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
@@ -1137,11 +1139,10 @@ containing a value of this type.
         public static final int main_user_info=0x7f050040;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
-        public static final int no_owing_text=0x7f050042;
+        public static final int no_transaction_text=0x7f050043;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
-        public static final int owing_fragment=0x7f050041;
-        public static final int owing_list=0x7f050043;
+        public static final int owing_list=0x7f050044;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
@@ -1164,7 +1165,7 @@ containing a value of this type.
         public static final int tabMode=0x7f050002;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
-        public static final int transaction_info=0x7f050044;
+        public static final int transaction_info=0x7f050045;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
@@ -1221,9 +1222,11 @@ containing a value of this type.
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_create_user=0x7f030018;
         public static final int activity_main=0x7f030019;
-        public static final int fragment_owing=0x7f03001a;
-        public static final int list_owing=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int fragment_owed=0x7f03001a;
+        public static final int fragment_owing=0x7f03001b;
+        public static final int list_owed=0x7f03001c;
+        public static final int list_owing=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

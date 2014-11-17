@@ -11,7 +11,7 @@
 	    android:layout_height="wrap_content"
 	    android:gravity="center_horizontal"
 	    android:textSize="@dimen/font_medium"
-	    android:text="@string/no_owing"
+	    android:text="@string/no_owed"
 	    android:visibility="gone" />
 
     <ListView
