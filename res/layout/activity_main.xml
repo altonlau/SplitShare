@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/ssniagara"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vpadding_large"
+    android:paddingLeft="@dimen/activity_hpadding_large"
+    android:paddingRight="@dimen/activity_hpadding_large"
+    android:paddingTop="@dimen/activity_vpadding_large"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/main_ic_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_vmargin_large"
+        android:scaleType="center"
+        android:contentDescription="@string/content_avatar"
+        android:src="@drawable/ic_avatar" />
+    
+    <TextView
+        android:id="@+id/main_user_info"
+        android:background="@drawable/container_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_ic_avatar"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/activity_vmargin_small"
+        android:textSize="@dimen/font_large" />
+    
+    <LinearLayout
+        android:background="@drawable/container_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_below="@id/main_user_info"
+	    android:layout_marginTop="@dimen/activity_vmargin_small"
+        android:orientation="vertical" >
+                    
+	    <fragment
+	        android:name="com.splitshare.fragment.OwingFragment"
+	        android:id="@+id/owing_fragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" />
+	
+	</LinearLayout>
+</RelativeLayout>

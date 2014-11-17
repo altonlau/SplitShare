@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/ssniagara"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vpadding_large"
+    android:paddingLeft="@dimen/activity_hpadding_large"
+    android:paddingRight="@dimen/activity_hpadding_large"
+    android:paddingTop="@dimen/activity_vpadding_large"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    tools:context="${packageName}.${activityClass}" >
+    
+    <LinearLayout
+        android:background="@drawable/container_element"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:layout_gravity="center"
+	    android:paddingBottom="@dimen/activity_vpadding_small"
+	    android:paddingLeft="@dimen/activity_hpadding_small"
+	    android:paddingRight="@dimen/activity_hpadding_small"
+	    android:paddingTop="@dimen/activity_vpadding_small"
+        android:orientation="vertical" >
+        
+        <EditText
+            android:id="@+id/create_first_name"
+            android:background="@drawable/edit_text_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/activity_vmargin_small"
+		    android:textColor="@color/ssniagara"
+		    android:textColorHint="@color/ssaqua"
+		    android:textSize="@dimen/font_small"
+            android:inputType="textCapWords"
+            android:hint="@string/first_name" />
+        
+        <EditText
+            android:id="@+id/create_last_name"
+            android:background="@drawable/edit_text_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_vmargin_small"
+            android:layout_marginBottom="@dimen/activity_vmargin_small"
+		    android:textColor="@color/ssniagara"
+		    android:textColorHint="@color/ssaqua"
+		    android:textSize="@dimen/font_small"
+            android:inputType="textCapWords"
+            android:hint="@string/last_name" />
+        
+        <Button
+            android:id="@+id/create_user_button"
+            android:background="@drawable/button_niagara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_vmargin_small"
+		    android:textColor="@drawable/text_button_niagara"
+		    android:textSize="@dimen/font_small"
+		    android:text="@string/create_user" />
+    
+    </LinearLayout>
+</LinearLayout>

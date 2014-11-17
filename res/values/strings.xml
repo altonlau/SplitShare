@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SplitShare</string>
+    
+    <!-- Main Activity -->
+    <string name="owing">You owe:</string>
+    <string name="owed">You\'re owed:</string>
+    <string name="no_owing">Hooray! You don\'t owe anyone!</string>
+    <string name="no_owed">Aww! You\'re not owed anything.</string>
+    
+    <!-- Create User Activity -->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="create_user">Create User</string>
+    <string name="error_missing_name">Please include your first and last name.</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_avatar">Avatar</string>
+   	
+</resources>
