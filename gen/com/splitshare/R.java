@@ -858,14 +858,16 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070007;
+        public static final int abc_search_url_text_holo=0x7f070009;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
-        public static final int ssaqua=0x7f070004;
-        public static final int ssgallery=0x7f070006;
-        public static final int ssniagara=0x7f070005;
-        public static final int white=0x7f070003;
+        public static final int grey=0x7f070005;
+        public static final int ssaqua=0x7f070006;
+        public static final int ssgallery=0x7f070008;
+        public static final int ssniagara=0x7f070007;
+        public static final int transparent=0x7f070003;
+        public static final int white=0x7f070004;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1085,18 +1087,22 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int button_niagara=0x7f020057;
-        public static final int button_niagara_focused=0x7f020058;
-        public static final int button_niagara_normal=0x7f020059;
-        public static final int container_element=0x7f02005a;
-        public static final int edit_text_gallery=0x7f02005b;
-        public static final int edit_text_gallery_focused=0x7f02005c;
-        public static final int edit_text_gallery_normal=0x7f02005d;
-        public static final int ic_avatar=0x7f02005e;
-        public static final int ic_launcher=0x7f02005f;
-        public static final int text_button_niagara=0x7f020060;
-        public static final int text_button_niagara_focused=0x7f020061;
-        public static final int text_button_niagara_normal=0x7f020062;
+        public static final int base_layout=0x7f020057;
+        public static final int button_niagara=0x7f020058;
+        public static final int button_niagara_focused=0x7f020059;
+        public static final int button_niagara_normal=0x7f02005a;
+        public static final int container_element_padding=0x7f02005b;
+        public static final int container_element_vpadding=0x7f02005c;
+        public static final int edit_text_gallery=0x7f02005d;
+        public static final int edit_text_gallery_focused=0x7f02005e;
+        public static final int edit_text_gallery_normal=0x7f02005f;
+        public static final int ic_add=0x7f020060;
+        public static final int ic_avatar=0x7f020061;
+        public static final int ic_launcher=0x7f020062;
+        public static final int text_button_niagara=0x7f020063;
+        public static final int text_button_niagara_focused=0x7f020064;
+        public static final int text_button_niagara_normal=0x7f020065;
+        public static final int text_element_hpadding=0x7f020066;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1220,13 +1226,14 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_create_user=0x7f030018;
-        public static final int activity_main=0x7f030019;
-        public static final int fragment_owed=0x7f03001a;
-        public static final int fragment_owing=0x7f03001b;
-        public static final int list_owed=0x7f03001c;
-        public static final int list_owing=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int activity_create_transaction=0x7f030018;
+        public static final int activity_create_user=0x7f030019;
+        public static final int activity_main=0x7f03001a;
+        public static final int fragment_owed=0x7f03001b;
+        public static final int fragment_owing=0x7f03001c;
+        public static final int list_owed=0x7f03001d;
+        public static final int list_owing=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1270,6 +1277,7 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int app_name=0x7f0a000d;
+        public static final int content_add=0x7f0a0017;
         /**  Content Descriptions 
          */
         public static final int content_avatar=0x7f0a0016;
@@ -1302,14 +1310,11 @@ containing a value of this type.
     
          */
         public static final int AppBaseTheme=0x7f0b008b;
-        /**  ActionBar styles 
-         */
-        public static final int SSActionBar=0x7f0b008e;
         /**  Application theme. 
  Application theme. 
          */
-        public static final int SSAppTheme=0x7f0b008d;
-        public static final int SSNoActionBarTheme=0x7f0b008c;
+        public static final int SSAppTheme=0x7f0b008c;
+        public static final int SSNoActionBarTheme=0x7f0b008d;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;

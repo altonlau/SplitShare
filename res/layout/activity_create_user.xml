@@ -1,18 +1,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/ssniagara"
+    android:background="@drawable/base_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vpadding_large"
-    android:paddingLeft="@dimen/activity_hpadding_large"
-    android:paddingRight="@dimen/activity_hpadding_large"
-    android:paddingTop="@dimen/activity_vpadding_large"
     android:orientation="horizontal"
     android:baselineAligned="false"
     tools:context="${packageName}.${activityClass}" >
     
     <LinearLayout
-        android:background="@drawable/container_element"
+        android:background="@drawable/container_element_padding"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.7"

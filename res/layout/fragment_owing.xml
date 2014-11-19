@@ -6,7 +6,7 @@
     
     <TextView
         android:id="@+id/no_transaction_text"
-        android:background="@color/white"
+        android:background="@drawable/text_element_hpadding"
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:gravity="center_horizontal"

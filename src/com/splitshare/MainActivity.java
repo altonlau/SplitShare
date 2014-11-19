@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.splitshare.db.DatabaseHelper;
@@ -79,8 +81,21 @@ public class MainActivity extends ActionBarActivity {
 	    if (requestCode == StaticValues.INTENT_CREATE_USER_REQUEST) {
 	        if (resultCode == RESULT_OK) {
 	        	setContentView(R.layout.activity_main);
-	        	buildUI();
+	        	
+	        	// Need to put a delay to avoid calling Fragment right after checking.
+	        	// Android bug for KitKat 4.4
+	        	new Thread(new Runnable() {
+					@Override
+					public void run() {
+			        	buildUI();
+					}
+	        	}).start();
 	        }
 	    }
+	}
+	
+	// UI Button Click Actions
+	private void onAddClick(View v) {
+		
 	}
 }

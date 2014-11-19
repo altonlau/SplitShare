@@ -6,8 +6,8 @@
     <!-- Main Activity -->
     <string name="owing">You owe:</string>
     <string name="owed">You\'re owed:</string>
-    <string name="no_owing">Hooray! You don\'t owe anyone!</string>
-    <string name="no_owed">Aww! You\'re not owed anything.</string>
+    <string name="no_owing">Yay! You don\'t owe anyone!</string>
+    <string name="no_owed">Aww! No one owes you.</string>
     
     <!-- Create User Activity -->
     <string name="first_name">First Name</string>
@@ -17,5 +17,6 @@
 
     <!-- Content Descriptions -->
     <string name="content_avatar">Avatar</string>
+    <string name="content_add">Add</string>
    	
 </resources>

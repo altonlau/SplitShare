@@ -24,23 +24,18 @@ public class TransactionFragment extends Fragment {
 	private int transactionType;
 	
 	public static TransactionFragment newInstance(int transactionType) {
-		TransactionFragment owingFragment = new TransactionFragment();
-		owingFragment.setTransactionType(transactionType);
+		TransactionFragment transactionFragment = new TransactionFragment();
+		transactionFragment.setTransactionType(transactionType);
 		
-		return owingFragment;
+		return transactionFragment;
 	}
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		return inflater.inflate(transactionType == StaticValues.TRANSACTION_OWED ? R.layout.fragment_owed : R.layout.fragment_owing, container, false);
-	}
-	
-	@Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-		super.onActivityCreated(savedInstanceState);
+		View view = inflater.inflate(transactionType == StaticValues.TRANSACTION_OWED ? R.layout.fragment_owed : R.layout.fragment_owing, container, false);
 		
-		TextView emptyText = (TextView) getActivity().findViewById(R.id.no_transaction_text);
-		ListView owingList = (ListView) getActivity().findViewById(R.id.owing_list);
+		TextView emptyText = (TextView) view.findViewById(R.id.no_transaction_text);
+		ListView owingList = (ListView) view.findViewById(R.id.owing_list);
 		
 		DatabaseHelper dbHelper = new DatabaseHelper(getActivity());
 		PeopleModel person = dbHelper.getUser();
@@ -53,11 +48,13 @@ public class TransactionFragment extends Fragment {
 			emptyText.setVisibility(View.GONE);
 			owingList.setVisibility(View.VISIBLE);
 			
-			adapter = new TransactionAdapter(getActivity(), finances, transactionType);
+			adapter = new TransactionAdapter(view.getContext(), finances, transactionType);
 			
 			owingList.setAdapter(adapter);
 		}
-    }
+		
+		return view;
+	}
 
 	public int getTransactionType() {
 		return transactionType;

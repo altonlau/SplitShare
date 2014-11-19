@@ -1,13 +1,8 @@
 package com.splitshare;
 
-import com.splitshare.db.DatabaseHelper;
-import com.splitshare.db.model.PeopleModel;
-
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -20,7 +15,9 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
-@TargetApi(Build.VERSION_CODES.GINGERBREAD)
+import com.splitshare.db.DatabaseHelper;
+import com.splitshare.db.model.PeopleModel;
+
 public class CreateUserActivity extends Activity {
 	private static final String TAG = "alton:CreateUser";
 	
@@ -57,7 +54,7 @@ public class CreateUserActivity extends Activity {
 		String lastName = lastNameText.getText().toString();
 		
 		if (firstName.isEmpty() || lastName.isEmpty()) {
-			Toast.makeText(this, R.string.error_missing_name, Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), R.string.error_missing_name, Toast.LENGTH_SHORT).show();
 		} else {
 			DatabaseHelper dbHelper = new DatabaseHelper(this);
 			PeopleModel person = new PeopleModel(firstName, lastName, StaticValues.ISUSER);
