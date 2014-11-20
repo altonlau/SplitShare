@@ -25,6 +25,9 @@
         <activity
             android:name="com.splitshare.CreateUserActivity" >
         </activity>
+        <activity
+            android:name="com.splitshare.CreateTransactionActivity" >
+        </activity>
     </application>
 
 </manifest>

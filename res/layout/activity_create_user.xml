@@ -20,7 +20,7 @@
         android:orientation="vertical" >
         
         <EditText
-            android:id="@+id/create_first_name"
+            android:id="@+id/create_user_first_name"
             android:background="@drawable/edit_text_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
             android:hint="@string/first_name" />
         
         <EditText
-            android:id="@+id/create_last_name"
+            android:id="@+id/create_user_last_name"
             android:background="@drawable/edit_text_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

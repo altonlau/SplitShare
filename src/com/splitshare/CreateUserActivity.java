@@ -28,8 +28,8 @@ public class CreateUserActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_user);
 		
-		firstNameText = (EditText) findViewById(R.id.create_first_name);
-		lastNameText = (EditText) findViewById(R.id.create_last_name);
+		firstNameText = (EditText) findViewById(R.id.create_user_first_name);
+		lastNameText = (EditText) findViewById(R.id.create_user_last_name);
 		Button createButton = (Button) findViewById(R.id.create_user_button);
 		
 		lastNameText.setOnEditorActionListener(new OnEditorActionListener() {

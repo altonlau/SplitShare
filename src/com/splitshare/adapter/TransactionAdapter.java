@@ -56,7 +56,7 @@ public class TransactionAdapter extends BaseAdapter {
 		DatabaseHelper dbHelper = new DatabaseHelper(context);
 		FinanceModel finance = finances.get(position);
 		PeopleModel person = dbHelper.getPeople(transactionType == StaticValues.TRANSACTION_OWED ? finance.getFromID() : finance.getToID());
-		DecimalFormat df = new DecimalFormat("0.00"); 
+		DecimalFormat df = new DecimalFormat("###0.00"); 
 		
 		personTransaction.setText(person.getFirstName() + " " + person.getLastName() + ": $" + df.format(finance.getAmountOwed()));
 		

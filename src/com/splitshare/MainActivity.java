@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.splitshare.db.DatabaseHelper;
@@ -95,7 +94,8 @@ public class MainActivity extends ActionBarActivity {
 	}
 	
 	// UI Button Click Actions
-	private void onAddClick(View v) {
-		
+	public void onAddClick(View v) {
+		Intent createTransactionIntent = new Intent(this, CreateTransactionActivity.class);
+		startActivity(createTransactionIntent);
 	}
 }
