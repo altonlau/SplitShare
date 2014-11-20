@@ -9,7 +9,7 @@
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/activity_vmargin_small"
+        android:layout_marginBottom="@dimen/activity_vmargin_large"
         android:orientation="horizontal" >
 
         <Button
@@ -35,7 +35,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vmargin_small"
+        android:layout_marginTop="@dimen/activity_vmargin_large"
         android:background="@drawable/base_layout"
         android:baselineAligned="false"
         android:orientation="horizontal" >
@@ -83,6 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_vmargin_small"
+                android:layout_marginBottom="@dimen/activity_vmargin_large"
                 android:background="@color/white"
                 android:orientation="horizontal" >
 
@@ -94,7 +97,6 @@
                     android:layout_weight="0.5"
                     android:background="@null"
                     android:contentDescription="@string/content_minus"
-                    android:onClick="onMinusClick"
                     android:src="@drawable/ic_minus" />
 
                 <EditText
@@ -120,9 +122,19 @@
                     android:layout_weight="0.5"
                     android:background="@null"
                     android:contentDescription="@string/content_add"
-                    android:onClick="onAddClick"
                     android:src="@drawable/ic_add" />
             </LinearLayout>
+            
+            <Button
+		        android:id="@+id/create_transaction_button"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/activity_vmargin_large"
+		        android:background="@drawable/button_niagara"
+		        android:gravity="center"
+		        android:text="@string/create_user"
+		        android:textColor="@drawable/text_button_niagara"
+		        android:textSize="@dimen/font_small" />
         </LinearLayout>
     </LinearLayout>
 

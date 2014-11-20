@@ -4,12 +4,8 @@
     <solid
         android:color="@color/ssniagara" />
     
-    <stroke
-        android:width="3dp"
-        android:color="@color/white" />
-    
     <corners
-        android:radius="10dp" />    
+        android:radius="10dp" />
     
     <padding
         android:left="@dimen/activity_hpadding_small"
