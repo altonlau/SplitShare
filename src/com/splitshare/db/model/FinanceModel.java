@@ -2,7 +2,7 @@ package com.splitshare.db.model;
 
 public class FinanceModel {
 	private int _id;
-	private int amountOwed;
+	private double amountOwed;
 	private String reason;
 	private int fromID;
 	private int toID;
@@ -11,7 +11,7 @@ public class FinanceModel {
 		//Empty constructor
 	}
 	
-	public FinanceModel(int amountOwed, String reason, int fromID, int toID) {
+	public FinanceModel(double amountOwed, String reason, int fromID, int toID) {
 		this.amountOwed = amountOwed;
 		this.reason = reason;
 		this.fromID = fromID;
@@ -35,11 +35,11 @@ public class FinanceModel {
 		this._id = id;
 	}
 	
-	public int getAmountOwed() {
+	public double getAmountOwed() {
 		return this.amountOwed;
 	}
 	
-	public void setAmountOwed(int amountOwed) {
+	public void setAmountOwed(double amountOwed) {
 		this.amountOwed = amountOwed;
 	}
 	

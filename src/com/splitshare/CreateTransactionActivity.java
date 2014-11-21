@@ -1,20 +1,31 @@
 package com.splitshare;
 
 import java.text.DecimalFormat;
+import java.util.List;
 
-import android.graphics.PorterDuff.Mode;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.splitshare.db.DatabaseHelper;
+import com.splitshare.db.model.FinanceModel;
+import com.splitshare.db.model.PeopleModel;
 
 public class CreateTransactionActivity extends ActionBarActivity implements OnTouchListener {
-	EditText firstName;
-	EditText lastName;
+	Button fromButton;
+	Button toButton;
+	Button createButton;
+	EditText firstNameText;
+	EditText lastNameText;
 	EditText amountText;
+	EditText reasonText;
 	ImageButton minusButton;
 	ImageButton addButton;
 	
@@ -26,15 +37,22 @@ public class CreateTransactionActivity extends ActionBarActivity implements OnTo
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_transaction);
 
-		firstName = (EditText) findViewById(R.id.create_transaction_first_name);
-		lastName = (EditText) findViewById(R.id.create_transaction_last_name);
+		fromButton = (Button) findViewById(R.id.create_transaction_from_button);
+		toButton = (Button) findViewById(R.id.create_transaction_to_button);
+		createButton = (Button) findViewById(R.id.create_transaction_button);
+		firstNameText = (EditText) findViewById(R.id.create_transaction_first_name);
+		lastNameText = (EditText) findViewById(R.id.create_transaction_last_name);
 		amountText = (EditText) findViewById(R.id.create_transaction_amount);
+		reasonText = (EditText) findViewById(R.id.create_transaction_reason);
 		minusButton = (ImageButton) findViewById(R.id.create_transaction_minus_button);
 		addButton = (ImageButton) findViewById(R.id.create_transaction_add_button);
 		
-		minusButton.setColorFilter(R.color.ssgallery, Mode.SRC_ATOP);
-		addButton.setColorFilter(R.color.ssgallery, Mode.SRC_ATOP);
+		fromButton.setSelected(true);
+		toButton.setSelected(false);
 		
+		fromButton.setOnTouchListener(this);
+		toButton.setOnTouchListener(this);
+		createButton.setOnTouchListener(this);
 		minusButton.setOnTouchListener(this);
 		addButton.setOnTouchListener(this);
 	}
@@ -70,19 +88,48 @@ public class CreateTransactionActivity extends ActionBarActivity implements OnTo
 
 	@Override
 	public boolean onTouch(View v, MotionEvent event) {
-		if (v == minusButton) {
+		if (v == fromButton) {
+			fromButton.setSelected(true);
+			toButton.setSelected(false);
+		} else if (v == toButton) {
+			fromButton.setSelected(false);
+			toButton.setSelected(true);
+		} else if (v == minusButton) {
 			if (event.getAction() == MotionEvent.ACTION_DOWN) {
 				minusButton.setImageResource(R.drawable.ic_minus_ssniagara);
 				changeAmount(OPERATION_MINUS);
 			} else if (event.getAction() == MotionEvent.ACTION_UP) {
-				minusButton.setImageResource(R.drawable.ic_minus);
+				minusButton.setImageResource(R.drawable.ic_minus_ssgallery);
 			}
 		} else if (v == addButton) {
 			if (event.getAction() == MotionEvent.ACTION_DOWN) {
 				addButton.setImageResource(R.drawable.ic_add_ssniagara);
 				changeAmount(OPERATION_ADD);
 			} else if (event.getAction() == MotionEvent.ACTION_UP) {
-				addButton.setImageResource(R.drawable.ic_add);
+				addButton.setImageResource(R.drawable.ic_add_ssgallery);
+			}
+		} else if (v == createButton) {
+			if (event.getAction() == MotionEvent.ACTION_DOWN) {
+				DatabaseHelper dbHelper = new DatabaseHelper(this);
+				List<PeopleModel> people;
+				PeopleModel person;
+				FinanceModel finance;
+				
+				String firstName = firstNameText.getText().toString();
+				String lastName = lastNameText.getText().toString();
+				String amountString = amountText.getText().toString();
+				
+				if (!firstName.isEmpty() && !lastName.isEmpty() && !amountString.isEmpty()) {
+					person = new PeopleModel(firstName, lastName, StaticValues.ISNOTUSER);
+					
+					if (!person.exists(this)) {
+						dbHelper.insertPeople(person);
+						
+						person = null;
+						person = dbHelper.getPeople(firstName, lastName);
+						Toast.makeText(getApplicationContext(), "ID: " + person.getID(), Toast.LENGTH_SHORT).show();
+					}
+				}
 			}
 		}
 		

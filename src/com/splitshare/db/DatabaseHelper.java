@@ -51,7 +51,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private static final String CREATE_TABLE_FINANCE = "CREATE TABLE "
 			+ TABLE_FINANCE + "("
 			+ COLUMN_ID + " INTEGER PRIMARY KEY,"
-			+ COLUMN_AMOUNTOWED + " INTEGER,"
+			+ COLUMN_AMOUNTOWED + " FLOAT,"
 			+ COLUMN_REASON + " TEXT,"
 			+ COLUMN_FROMID + " INTEGER,"
 			+ COLUMN_TOID + " INTEGER" + ")";
@@ -107,7 +107,29 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         person.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
         person.setFirstName(c.getString(c.getColumnIndex(COLUMN_FIRSTNAME)));
         person.setLastName(c.getString(c.getColumnIndex(COLUMN_LASTNAME)));
-        person.setIsUser((c.getInt(c.getColumnIndex(COLUMN_ISUSER)) == 0) ? false : true);
+        person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)));
+     
+        return person;
+    }
+    
+    public PeopleModel getPeople(String firstName, String lastName) {
+        SQLiteDatabase db = this.getReadableDatabase();
+     
+		String query = "SELECT  * FROM " + TABLE_PEOPLE + " WHERE "
+				+ COLUMN_FIRSTNAME + " = " + firstName + " AND "
+				+ COLUMN_LASTNAME + " = " + lastName;
+     
+        Log.i(TAG, query);
+     
+        Cursor c = db.rawQuery(query, null);
+     
+        if (c != null) c.moveToFirst();
+     
+        PeopleModel person = new PeopleModel();
+        person.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
+        person.setFirstName(c.getString(c.getColumnIndex(COLUMN_FIRSTNAME)));
+        person.setLastName(c.getString(c.getColumnIndex(COLUMN_LASTNAME)));
+        person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)));
      
         return person;
     }
@@ -128,7 +150,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 person.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
                 person.setFirstName(c.getString(c.getColumnIndex(COLUMN_FIRSTNAME)));
                 person.setLastName(c.getString(c.getColumnIndex(COLUMN_LASTNAME)));
-                person.setIsUser((c.getInt(c.getColumnIndex(COLUMN_ISUSER)) == 0) ? false : true);
+                person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)));
      
                 // Adding to people list
                 people.add(person);
@@ -150,7 +172,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         person.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
         person.setFirstName(c.getString(c.getColumnIndex(COLUMN_FIRSTNAME)));
         person.setLastName(c.getString(c.getColumnIndex(COLUMN_LASTNAME)));
-        person.setIsUser((c.getInt(c.getColumnIndex(COLUMN_ISUSER)) == 0) ? false : true);
+        person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)));
         
         return person;
     }

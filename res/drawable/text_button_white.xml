@@ -7,6 +7,9 @@
     <item
         android:color="@color/white"
         android:state_pressed="true" />
+    <item
+        android:color="@color/white"
+        android:state_selected="true" />
     
     <item 
         android:color="@color/ssniagara" />

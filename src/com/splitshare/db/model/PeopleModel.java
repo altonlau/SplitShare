@@ -1,5 +1,12 @@
 package com.splitshare.db.model;
 
+import java.util.List;
+import java.util.Locale;
+
+import android.content.Context;
+
+import com.splitshare.db.DatabaseHelper;
+
 public class PeopleModel {
 	private int _id;
 	private String firstName;
@@ -21,6 +28,24 @@ public class PeopleModel {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.isUser = isUser;
+	}
+	
+	public boolean exists(Context context) {
+		boolean exists = false;
+		DatabaseHelper dbHelper = new DatabaseHelper(context);
+		List<PeopleModel> people = dbHelper.getAllPeople();
+		
+		for (PeopleModel p : people) {
+			if (p.getFirstName().toLowerCase(Locale.getDefault())
+					.equals(firstName.toLowerCase(Locale.getDefault()))
+					&& p.getLastName().toLowerCase(Locale.getDefault())
+							.equals(lastName.toLowerCase(Locale.getDefault()))) {
+				exists = true;
+				break;
+			}
+		}
+		
+		return exists;
 	}
 	
 	// Getters and Setters
@@ -48,11 +73,11 @@ public class PeopleModel {
 		this.lastName = lastName;
 	}
 	
-	public boolean getIsUser() {
-		return this.isUser == 1 ? true : false;
+	public int getIsUser() {
+		return this.isUser;
 	}
 	
-	public void setIsUser(boolean isUser) {
-		this.isUser = isUser ? 1 : 0;
+	public void setIsUser(int isUser) {
+		this.isUser = isUser;
 	}
 }
