@@ -26,5 +26,6 @@
     <string name="content_avatar">Avatar</string>
     <string name="content_add">Add</string>
    	<string name="content_minus">Minus</string>
+   	<string name="content_reason">Reason</string>
     
 </resources>

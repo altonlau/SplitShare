@@ -2,93 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd59708-0d3e-4ea0-9adc-ecb1ae1fb0c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/SplitShare.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\R.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\SplitShare.apk" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$anim.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$bool.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$integer.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\android\support\v7\appcompat\R.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\CreateUserActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\CreateUserActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\MainActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$anim.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$bool.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$integer.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\R.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\classes\com\splitshare\fragment\TransactionFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\dexedLibs\android-support-v4-5b1c11a847c811f88ef1f3904b09897e.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\dexedLibs\android-support-v4-a6288eb3ad50ad774d8a44eef375a5f3.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\dexedLibs\android-support-v4-e3822ac80a33b569c62caa40e1cffe6e.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\dexedLibs\android-support-v7-appcompat-542fe62790adb894612485c60f0bf801.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\dexedLibs\android-support-v7-appcompat-74142c8fc30b6509535b9d392b94adbb.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\dexedLibs\appcompat_v7-47b14e725b61f4758a3dc51dca6a30be.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\dexedLibs\appcompat_v7-c5ffcddddfb433418545da6543865c55.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\jarlist.cache" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-hdpi\ic_add.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-hdpi\ic_minus.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-mdpi\ic_add.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-mdpi\ic_minus.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-xhdpi\ic_add.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-xhdpi\ic_minus.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-xxhdpi\ic_add.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-xxhdpi\ic_avatar.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\res\crunch\drawable-xxhdpi\ic_minus.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\bin\resources.ap_" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\gen\android\support\v7\appcompat\R.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\gen\com\splitshare\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\gen\com\splitshare\R.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-hdpi/ic_add_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-mdpi/ic_add_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-xhdpi/ic_add_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-xxhdpi/ic_add_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_add_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_add_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_add_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_add_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-hdpi/ic_add_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-mdpi/ic_add_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-xhdpi/ic_add_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-xxhdpi/ic_add_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_add_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_add_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_add_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_add_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-hdpi/ic_minus_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-mdpi/ic_minus_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-xhdpi/ic_minus_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-xxhdpi/ic_minus_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_minus_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_minus_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_minus_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_minus_ssgallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-hdpi/ic_minus_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-mdpi/ic_minus_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-xhdpi/ic_minus_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/res/crunch/drawable-xxhdpi/ic_minus_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_minus_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_minus_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_minus_ssniagara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_minus_ssniagara.png" />
+      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\res\drawable\container_element.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\res\drawable\text_button_niagara_focused.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\res\drawable\text_button_niagara_normal.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/CreateTransactionActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/CreateTransactionActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/CreateUserActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/CreateUserActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/db/DatabaseHelper.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/db/DatabaseHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/db/model/FinanceModel.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/db/model/FinanceModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/MainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/MainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/db/model/PeopleModel.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/db/model/PeopleModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/StaticValues.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/StaticValues.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/R$drawable.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/R$integer.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/R$layout.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/R$string.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/R$style.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/R$styleable.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/SplitShare.apk" afterPath="$PROJECT_DIR$/bin/SplitShare.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/adapter/TransactionAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/adapter/TransactionAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/splitshare/fragment/TransactionFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/splitshare/fragment/TransactionFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dexedLibs/android-support-v4-5b1c11a847c811f88ef1f3904b09897e.jar" afterPath="$PROJECT_DIR$/bin/dexedLibs/android-support-v4-5b1c11a847c811f88ef1f3904b09897e.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dexedLibs/android-support-v7-appcompat-542fe62790adb894612485c60f0bf801.jar" afterPath="$PROJECT_DIR$/bin/dexedLibs/android-support-v7-appcompat-542fe62790adb894612485c60f0bf801.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dexedLibs/appcompat_v7-c5ffcddddfb433418545da6543865c55.jar" afterPath="$PROJECT_DIR$/bin/dexedLibs/appcompat_v7-c5ffcddddfb433418545da6543865c55.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes.dex" afterPath="$PROJECT_DIR$/bin/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/resources.ap_" afterPath="$PROJECT_DIR$/bin/resources.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/splitshare/CreateTransactionActivity.java" afterPath="$PROJECT_DIR$/src/com/splitshare/CreateTransactionActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/splitshare/db/DatabaseHelper.java" afterPath="$PROJECT_DIR$/src/com/splitshare/db/DatabaseHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/splitshare/db/model/FinanceModel.java" afterPath="$PROJECT_DIR$/src/com/splitshare/db/model/FinanceModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/splitshare/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/splitshare/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/splitshare/db/model/PeopleModel.java" afterPath="$PROJECT_DIR$/src/com/splitshare/db/model/PeopleModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/splitshare/StaticValues.java" afterPath="$PROJECT_DIR$/src/com/splitshare/StaticValues.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/splitshare/R.java" afterPath="$PROJECT_DIR$/gen/com/splitshare/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/R.txt" afterPath="$PROJECT_DIR$/bin/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_create_transaction.xml" afterPath="$PROJECT_DIR$/res/layout/activity_create_transaction.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_owed.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_owed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_owing.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_owing.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_create_user.xml" afterPath="$PROJECT_DIR$/res/layout/activity_create_user.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/button_niagara.xml" afterPath="$PROJECT_DIR$/res/drawable/button_niagara.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/button_white.xml" afterPath="$PROJECT_DIR$/res/drawable/button_white.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/edit_text_gallery.xml" afterPath="$PROJECT_DIR$/res/drawable/edit_text_gallery.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/jarlist.cache" afterPath="$PROJECT_DIR$/bin/jarlist.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MOVED" beforePath="D:\Users\Alton\Documents\Coding\GitHub\SplitShare\src\com\splitshare\fragment\TransactionFragment.java" afterPath="$PROJECT_DIR$/src/com/splitshare/fragment/TransactionOwedFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/text_button_niagara.xml" afterPath="$PROJECT_DIR$/res/drawable/text_button_niagara.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/text_button_white.xml" afterPath="$PROJECT_DIR$/res/drawable/text_button_white.xml" />
     </list>
     <ignored path="SplitShare.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,9 +108,17 @@
       <file leaf-file-name="TransactionAdapter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/splitshare/adapter/TransactionAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3585608" vertical-offset="0" max-vertical-offset="867">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.516129" vertical-offset="26" max-vertical-offset="1224">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#920#921#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,6 +137,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/project.properties" />
+        <option value="$PROJECT_DIR$/src/com/splitshare/adapter/TransactionAdapter.java" />
       </list>
     </option>
   </component>
@@ -180,11 +173,10 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane />
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,92 +185,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="splitshare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="splitshare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="splitshare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,6 +200,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntries" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -470,7 +380,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -506,6 +416,30 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/splitshare/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2023">
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/splitshare/adapter/TransactionAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="867">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/splitshare/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="2023">
           <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
           <folding />
@@ -516,7 +450,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="867">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -558,9 +500,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/splitshare/adapter/TransactionAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3585608" vertical-offset="0" max-vertical-offset="867">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.516129" vertical-offset="26" max-vertical-offset="1224">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

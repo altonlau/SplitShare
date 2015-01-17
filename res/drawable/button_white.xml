@@ -7,6 +7,9 @@
     <item
         android:drawable="@drawable/button_white_focused"
         android:state_pressed="true" />
+    <item
+        android:drawable="@drawable/button_white_focused"
+        android:state_selected="true" />
     
     <item android:drawable="@drawable/button_white_normal" />    
   

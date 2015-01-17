@@ -11,7 +11,7 @@ public class FinanceModel {
 		//Empty constructor
 	}
 	
-	public FinanceModel(int amountOwed, String reason, int fromID, int toID) {
+	public FinanceModel(float amountOwed, String reason, int fromID, int toID) {
 		this.amountOwed = amountOwed;
 		this.reason = reason;
 		this.fromID = fromID;
