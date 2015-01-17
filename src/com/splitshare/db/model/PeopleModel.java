@@ -4,19 +4,19 @@ public class PeopleModel {
 	private int _id;
 	private String firstName;
 	private String lastName;
-	private int isUser;
+	private boolean isUser;
 	
 	public PeopleModel() {
 		//Empty constructor
 	}
 	
-	public PeopleModel(String firstName, String lastName, int isUser) {
+	public PeopleModel(String firstName, String lastName, boolean isUser) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.isUser = isUser;
 	}
 	
-	public PeopleModel(int id, String firstName, String lastName, int isUser) {
+	public PeopleModel(int id, String firstName, String lastName, boolean isUser) {
 		this._id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -49,10 +49,10 @@ public class PeopleModel {
 	}
 	
 	public boolean getIsUser() {
-		return this.isUser == 1 ? true : false;
+		return this.isUser;
 	}
 	
 	public void setIsUser(boolean isUser) {
-		this.isUser = isUser ? 1 : 0;
+		this.isUser = isUser;
 	}
 }

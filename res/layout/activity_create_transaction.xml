@@ -18,9 +18,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_niagara"
+            android:background="@drawable/button_white"
+            android:onClick="onTransactionClick"
             android:text="@string/transaction_from"
-            android:textColor="@drawable/text_button_niagara" />
+            android:textColor="@drawable/text_button_white" />
 
         <Button
             android:id="@+id/create_transaction_to_button"
@@ -29,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/button_niagara"
+            android:onClick="onTransactionClick"
             android:text="@string/transaction_to"
             android:textColor="@drawable/text_button_niagara" />
     </LinearLayout>
@@ -82,6 +84,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vmargin_small"
                 android:layout_marginTop="@dimen/activity_vmargin_small"
                 android:background="@color/white"
                 android:orientation="horizontal" >
@@ -123,6 +126,31 @@
                     android:onClick="onAddClick"
                     android:src="@drawable/ic_add" />
             </LinearLayout>
+
+            <EditText
+                android:id="@+id/create_transaction_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vmargin_large"
+                android:layout_marginTop="@dimen/activity_vmargin_small"
+                android:background="@drawable/edit_text_gallery"
+                android:gravity="center"
+                android:hint="@string/transaction_reason"
+                android:inputType="textCapSentences"
+                android:textColor="@color/ssniagara"
+                android:textColorHint="@color/ssaqua"
+                android:textSize="@dimen/font_small" />
+
+            <Button
+                android:id="@+id/create_transaction_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vmargin_large"
+                android:background="@drawable/button_niagara"
+                android:gravity="center"
+                android:text="@string/transaction_create"
+                android:textColor="@drawable/text_button_niagara"
+                android:textSize="@dimen/font_small" />
         </LinearLayout>
     </LinearLayout>
 

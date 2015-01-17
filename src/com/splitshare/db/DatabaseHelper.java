@@ -51,7 +51,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private static final String CREATE_TABLE_FINANCE = "CREATE TABLE "
 			+ TABLE_FINANCE + "("
 			+ COLUMN_ID + " INTEGER PRIMARY KEY,"
-			+ COLUMN_AMOUNTOWED + " INTEGER,"
+			+ COLUMN_AMOUNTOWED + " CURRENCY,"
 			+ COLUMN_REASON + " TEXT,"
 			+ COLUMN_FROMID + " INTEGER,"
 			+ COLUMN_TOID + " INTEGER" + ")";
@@ -79,7 +79,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     
     /** PEOPLE methods **/
-    public void insertPeople(PeopleModel people) {
+    public long insertPeople(PeopleModel people) {
     	SQLiteDatabase db = this.getWritableDatabase();
     	
     	ContentValues values = new ContentValues();
@@ -88,7 +88,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     	values.put(COLUMN_ISUSER, people.getIsUser());
     	
     	// Insert row
-    	db.insert(TABLE_PEOPLE, null, values);
+    	return db.insert(TABLE_PEOPLE, null, values);
     }
     
     public PeopleModel getPeople(int id) {
@@ -177,7 +177,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     
     /** FINANCE methods **/
-    public void insertFinance(FinanceModel finance) {
+    public long insertFinance(FinanceModel finance) {
     	SQLiteDatabase db = this.getWritableDatabase();
     	
     	ContentValues values = new ContentValues();
@@ -187,7 +187,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     	values.put(COLUMN_TOID, finance.getToID());
     	
     	// Insert row
-    	db.insert(TABLE_FINANCE, null, values);
+    	return db.insert(TABLE_FINANCE, null, values);
     }
     
     public FinanceModel getFinance(int id) {
@@ -204,7 +204,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         
         FinanceModel finance = new FinanceModel();
         finance.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
-        finance.setAmountOwed(c.getInt(c.getColumnIndex(COLUMN_AMOUNTOWED)));
+        finance.setAmountOwed(c.getFloat(c.getColumnIndex(COLUMN_AMOUNTOWED)));
         finance.setReason(c.getString(c.getColumnIndex(COLUMN_REASON)));
         finance.setFromID(c.getInt(c.getColumnIndex(COLUMN_FROMID)));
         finance.setToID(c.getInt(c.getColumnIndex(COLUMN_TOID)));
@@ -226,7 +226,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             do {
                 FinanceModel finance = new FinanceModel();
                 finance.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
-                finance.setAmountOwed(c.getInt(c.getColumnIndex(COLUMN_AMOUNTOWED)));
+                finance.setAmountOwed(c.getFloat(c.getColumnIndex(COLUMN_AMOUNTOWED)));
                 finance.setReason(c.getString(c.getColumnIndex(COLUMN_REASON)));
                 finance.setFromID(c.getInt(c.getColumnIndex(COLUMN_FROMID)));
                 finance.setToID(c.getInt(c.getColumnIndex(COLUMN_TOID)));
@@ -253,7 +253,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             do {
                 FinanceModel finance = new FinanceModel();
                 finance.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
-                finance.setAmountOwed(c.getInt(c.getColumnIndex(COLUMN_AMOUNTOWED)));
+                finance.setAmountOwed(c.getFloat(c.getColumnIndex(COLUMN_AMOUNTOWED)));
                 finance.setReason(c.getString(c.getColumnIndex(COLUMN_REASON)));
                 finance.setFromID(c.getInt(c.getColumnIndex(COLUMN_FROMID)));
                 finance.setToID(c.getInt(c.getColumnIndex(COLUMN_TOID)));
@@ -280,7 +280,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             do {
                 FinanceModel finance = new FinanceModel();
                 finance.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
-                finance.setAmountOwed(c.getInt(c.getColumnIndex(COLUMN_AMOUNTOWED)));
+                finance.setAmountOwed(c.getFloat(c.getColumnIndex(COLUMN_AMOUNTOWED)));
                 finance.setReason(c.getString(c.getColumnIndex(COLUMN_REASON)));
                 finance.setFromID(c.getInt(c.getColumnIndex(COLUMN_FROMID)));
                 finance.setToID(c.getInt(c.getColumnIndex(COLUMN_TOID)));
