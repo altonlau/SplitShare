@@ -1,63 +1,56 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/base_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:overScrollMode="never"
-    tools:context="${packageName}.${activityClass}" >
+    android:orientation="vertical" >
     
-	<LinearLayout
-	    android:background="@drawable/base_layout"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:orientation="vertical" >
-	    
-	    <ImageButton
-	        android:background="@null"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="right"
-	        android:onClick="onAddClick"
-	        android:contentDescription="@string/content_add"
-	        android:src="@drawable/ic_add" />
-	
-	    <ImageView
-	        android:id="@+id/main_ic_avatar"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center_horizontal"
-	        android:layout_marginBottom="@dimen/activity_vmargin_large"
-	        android:scaleType="center"
-	        android:contentDescription="@string/content_avatar"
-	        android:src="@drawable/ic_avatar" />
-	    
-	    <TextView
-	        android:id="@+id/main_user_info"
-	        android:background="@drawable/container_element_padding"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center_horizontal"
-	        android:gravity="center_horizontal"
-	        android:layout_marginBottom="@dimen/activity_vmargin_small"
-	        android:textSize="@dimen/font_large" />
-	    
-	    <LinearLayout
-	        android:id="@+id/fragment_owed"
-	        android:background="@drawable/container_element_vpadding"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center_horizontal"
-		    android:layout_marginTop="@dimen/activity_vmargin_small"
-	        android:layout_marginBottom="@dimen/activity_vmargin_small"
-	        android:orientation="vertical" />
-	    
-	    <LinearLayout
-	        android:id="@+id/fragment_owing"
-	        android:background="@drawable/container_element_vpadding"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center_horizontal"
-		    android:layout_marginTop="@dimen/activity_vmargin_small"
-	        android:orientation="vertical" />
-	    
-	</LinearLayout>
-</ScrollView>
+    <ImageButton
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:onClick="onAddClick"
+        android:contentDescription="@string/content_add"
+        android:src="@drawable/ic_add" />
+
+    <ImageView
+        android:id="@+id/main_ic_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/activity_vmargin_large"
+        android:scaleType="center"
+        android:contentDescription="@string/content_avatar"
+        android:src="@drawable/ic_avatar" />
+    
+    <TextView
+        android:id="@+id/main_user_info"
+        android:background="@drawable/container_element_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/activity_vmargin_small"
+        android:textSize="@dimen/font_large" />
+    
+    <LinearLayout
+        android:id="@+id/fragment_owed"
+        android:background="@drawable/container_element_vpadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="@dimen/activity_vmargin_small"
+        android:layout_marginBottom="@dimen/activity_vmargin_small"
+        android:orientation="vertical" />
+    
+    <LinearLayout
+        android:id="@+id/fragment_owing"
+        android:background="@drawable/container_element_vpadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="@dimen/activity_vmargin_small"
+        android:orientation="vertical" />
+    
+</LinearLayout>

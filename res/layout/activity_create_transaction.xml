@@ -24,7 +24,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/button_niagara"
-                android:onClick="onTransactionClick"
                 android:text="@string/transaction_from"
                 android:textColor="@drawable/text_button_niagara" />
 
@@ -35,7 +34,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/button_niagara"
-                android:onClick="onTransactionClick"
                 android:text="@string/transaction_to"
                 android:textColor="@drawable/text_button_niagara" />
         </LinearLayout>

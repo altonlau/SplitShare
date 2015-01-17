@@ -18,7 +18,7 @@ public class FinanceModel {
 		this.toID = toID;
 	}
 	
-	public FinanceModel(int id, int amountOwed, String reason, int fromID, int toID) {
+	public FinanceModel(int id, float amountOwed, String reason, int fromID, int toID) {
 		this._id = id;
 		this.amountOwed = amountOwed;
 		this.reason = reason;

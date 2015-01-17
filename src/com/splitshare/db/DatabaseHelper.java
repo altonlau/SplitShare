@@ -51,7 +51,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private static final String CREATE_TABLE_FINANCE = "CREATE TABLE "
 			+ TABLE_FINANCE + "("
 			+ COLUMN_ID + " INTEGER PRIMARY KEY,"
-			+ COLUMN_AMOUNTOWED + " CURRENCY,"
+			+ COLUMN_AMOUNTOWED + " FLOAT,"
 			+ COLUMN_REASON + " TEXT,"
 			+ COLUMN_FROMID + " INTEGER,"
 			+ COLUMN_TOID + " INTEGER" + ")";
@@ -107,7 +107,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         person.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
         person.setFirstName(c.getString(c.getColumnIndex(COLUMN_FIRSTNAME)));
         person.setLastName(c.getString(c.getColumnIndex(COLUMN_LASTNAME)));
-        person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)) == 1);
+        person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)));
      
         return person;
     }
@@ -129,7 +129,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         person.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
         person.setFirstName(c.getString(c.getColumnIndex(COLUMN_FIRSTNAME)));
         person.setLastName(c.getString(c.getColumnIndex(COLUMN_LASTNAME)));
-        person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)) == 1);
+        person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)));
      
         return person;
     }
@@ -150,7 +150,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 person.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
                 person.setFirstName(c.getString(c.getColumnIndex(COLUMN_FIRSTNAME)));
                 person.setLastName(c.getString(c.getColumnIndex(COLUMN_LASTNAME)));
-                person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)) == 1);
+                person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)));
      
                 // Adding to people list
                 people.add(person);
@@ -172,7 +172,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         person.setID(c.getInt(c.getColumnIndex(COLUMN_ID)));
         person.setFirstName(c.getString(c.getColumnIndex(COLUMN_FIRSTNAME)));
         person.setLastName(c.getString(c.getColumnIndex(COLUMN_LASTNAME)));
-        person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)) == 1);
+        person.setIsUser(c.getInt(c.getColumnIndex(COLUMN_ISUSER)));
         
         return person;
     }

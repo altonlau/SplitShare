@@ -11,27 +11,31 @@ public class PeopleModel {
 	private int _id;
 	private String firstName;
 	private String lastName;
-	private boolean isUser;
+	private int isUser;
 	
 	public PeopleModel() {
 		//Empty constructor
 	}
 	
-	public PeopleModel(String firstName, String lastName, boolean isUser) {
+	public PeopleModel(String firstName, String lastName, int isUser) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.isUser = isUser;
 	}
 	
-	public PeopleModel(int id, String firstName, String lastName, boolean isUser) {
+	public PeopleModel(int id, String firstName, String lastName, int isUser) {
 		this._id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.isUser = isUser;
 	}
 	
-	public boolean exists(Context context) {
-		boolean exists = false;
+	// Getters and Setters
+	public int getID() {
+		return this._id;
+	}
+	
+	public int getID(Context context) {
 		DatabaseHelper dbHelper = new DatabaseHelper(context);
 		List<PeopleModel> people = dbHelper.getAllPeople();
 		
@@ -40,17 +44,11 @@ public class PeopleModel {
 					.equals(firstName.toLowerCase(Locale.getDefault()))
 					&& p.getLastName().toLowerCase(Locale.getDefault())
 							.equals(lastName.toLowerCase(Locale.getDefault()))) {
-				exists = true;
-				break;
+				return p.getID();
 			}
 		}
 		
-		return exists;
-	}
-	
-	// Getters and Setters
-	public int getID() {
-		return this._id;
+		return -1;
 	}
 	
 	public void setID(int id) {
@@ -73,11 +71,11 @@ public class PeopleModel {
 		this.lastName = lastName;
 	}
 	
-	public boolean getIsUser() {
+	public int getIsUser() {
 		return this.isUser;
 	}
 	
-	public void setIsUser(boolean isUser) {
+	public void setIsUser(int isUser) {
 		this.isUser = isUser;
 	}
 }

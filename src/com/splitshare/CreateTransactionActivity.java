@@ -1,26 +1,20 @@
 package com.splitshare;
 
 import java.text.DecimalFormat;
-import java.util.List;
-
-import android.R;
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Toast;
-
 import com.splitshare.db.DatabaseHelper;
 import com.splitshare.db.model.FinanceModel;
 import com.splitshare.db.model.PeopleModel;
 
-public class CreateTransactionActivity extends ActionBarActivity implements OnTouchListener {
+public class CreateTransactionActivity extends Activity implements OnTouchListener {
 	Button fromButton;
 	Button toButton;
 	Button createButton;
@@ -31,10 +25,9 @@ public class CreateTransactionActivity extends ActionBarActivity implements OnTo
 	ImageButton minusButton;
 	ImageButton addButton;
 	
+	private static final int OPERATION_MINUS = 0;
+	private static final int OPERATION_ADD = 1;
 	int transactionType;
-	
-	int OPERATION_MINUS = 0;
-	int OPERATION_ADD = 1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,53 +44,16 @@ public class CreateTransactionActivity extends ActionBarActivity implements OnTo
 		minusButton = (ImageButton) findViewById(R.id.create_transaction_minus_button);
 		addButton = (ImageButton) findViewById(R.id.create_transaction_add_button);
 		
-		minusButton.setColorFilter(R.color.grey);
-		addButton.setColorFilter(R.color.grey);
-		
 		transactionType = StaticValues.TRANSACTION_OWED;
 		
-		createButton.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				createTransaction();
-			}
-		});
-	}
-	
-	public void createTransaction() {
-		String firstName = firstNameText.getText().toString();
-		String lastName = lastNameText.getText().toString();
-		String amountString = amountText.getText().toString();
-		String reason = reasonText.getText().toString();
+		fromButton.setSelected(true);
+		toButton.setSelected(false);
 		
-		if (firstName.isEmpty() || lastName.isEmpty() || amountString.isEmpty() || reason.isEmpty()) {
-			Toast.makeText(this, "Make sure everything is filled out.", Toast.LENGTH_SHORT).show();	
-		} else {
-			if (transactionType == StaticValues.TRANSACTION_OWED) {
-				DatabaseHelper dbHelper = new DatabaseHelper(this);
-				PeopleModel user = dbHelper.getUser();
-				PeopleModel person = new PeopleModel();
-				FinanceModel finance = new FinanceModel();
-				
-				person.setFirstName(firstName);
-				person.setLastName(lastName);
-				person.setIsUser(StaticValues.ISNOTUSER);
-				
-				long id = dbHelper.insertPeople(person);
-				
-				Log.d("alton", "ID created: " + id);
-				
-				finance.setFromID((int) id);
-				finance.setToID(user.getID());
-				finance.setAmountOwed(Float.parseFloat(amountString));
-				finance.setReason(reason);
-				
-				dbHelper.insertFinance(finance);
-				
-				setResult(RESULT_OK);
-				finish();
-			}
-		}
+		fromButton.setOnTouchListener(this);
+		toButton.setOnTouchListener(this);
+		createButton.setOnTouchListener(this);
+		minusButton.setOnTouchListener(this);
+		addButton.setOnTouchListener(this);
 	}
 	
 	public void changeAmount(int operation) {
@@ -129,14 +85,16 @@ public class CreateTransactionActivity extends ActionBarActivity implements OnTo
 		amountText.setText(df.format(amount));
 	}
 
-	@Override
+	@SuppressLint("ClickableViewAccessibility") @Override
 	public boolean onTouch(View v, MotionEvent event) {
 		if (v == fromButton) {
 			fromButton.setSelected(true);
 			toButton.setSelected(false);
+			transactionType = StaticValues.TRANSACTION_OWED;
 		} else if (v == toButton) {
 			fromButton.setSelected(false);
 			toButton.setSelected(true);
+			transactionType = StaticValues.TRANSACTION_OWING;
 		} else if (v == minusButton) {
 			if (event.getAction() == MotionEvent.ACTION_DOWN) {
 				minusButton.setImageResource(R.drawable.ic_minus_ssniagara);
@@ -154,46 +112,40 @@ public class CreateTransactionActivity extends ActionBarActivity implements OnTo
 		} else if (v == createButton) {
 			if (event.getAction() == MotionEvent.ACTION_DOWN) {
 				DatabaseHelper dbHelper = new DatabaseHelper(this);
-				List<PeopleModel> people;
+				PeopleModel user = dbHelper.getUser();
 				PeopleModel person;
 				FinanceModel finance;
 				
 				String firstName = firstNameText.getText().toString();
 				String lastName = lastNameText.getText().toString();
 				String amountString = amountText.getText().toString();
+				String reason = reasonText.getText().toString();
 				
-				if (!firstName.isEmpty() && !lastName.isEmpty() && !amountString.isEmpty()) {
+				if (!firstName.isEmpty() && !lastName.isEmpty() && !amountString.isEmpty() && !reason.isEmpty()) {
 					person = new PeopleModel(firstName, lastName, StaticValues.ISNOTUSER);
+					int personID = person.getID();
 					
-					if (!person.exists(this)) {
-						dbHelper.insertPeople(person);
-						
-						person = null;
-						person = dbHelper.getPeople(firstName, lastName);
-						Toast.makeText(getApplicationContext(), "ID: " + person.getID(), Toast.LENGTH_SHORT).show();
+					if (personID != -1) {
+						int id = (int) dbHelper.insertPeople(person);
+						person = dbHelper.getPeople(id);
+					} else {
+						person = dbHelper.getPeople(personID);
+					}
+					
+					if (transactionType == StaticValues.TRANSACTION_OWED) {
+						finance = new FinanceModel(Float.parseFloat(amountString), reason, person.getID(), user.getID());
+						dbHelper.insertFinance(finance);
+					} else if (transactionType == StaticValues.TRANSACTION_OWING) {
+						finance = new FinanceModel(Float.parseFloat(amountString), reason, user.getID(), person.getID());
+						dbHelper.insertFinance(finance);
 					}
 				}
+				
+				setResult(RESULT_OK);
+				finish();
 			}
 		}
 		
 		return false;
-	}
-	
-	public void onTransactionClick(View v) {
-		if (v == fromButton) {
-			toButton.setBackground(getResources().getDrawable(R.drawable.button_niagara));
-			toButton.setTextColor(getResources().getColor(R.drawable.text_button_niagara));
-			fromButton.setBackground(getResources().getDrawable(R.drawable.button_white));
-			fromButton.setTextColor(getResources().getColor(R.drawable.text_button_white));
-			
-			transactionType = StaticValues.TRANSACTION_OWED;
-		} else if (v == toButton) {
-			fromButton.setBackground(getResources().getDrawable(R.drawable.button_niagara));
-			fromButton.setTextColor(getResources().getColor(R.drawable.text_button_niagara));
-			toButton.setBackground(getResources().getDrawable(R.drawable.button_white));
-			toButton.setTextColor(getResources().getColor(R.drawable.text_button_white));
-			
-			transactionType = StaticValues.TRANSACTION_OWING;
-		}
 	}
 }
